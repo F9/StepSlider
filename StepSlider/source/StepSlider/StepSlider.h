@@ -25,7 +25,10 @@ typedef NS_ENUM(NSUInteger, StepSliderTextOrientation) {
 IB_DESIGNABLE
 
 @interface StepSlider : UIControl
-
+/**
+ *  Generic keyValue of Slider. Use this as 'tag' in UIView objects
+ */
+@property (nonatomic, retain) NSString *keyValue;
 /**
  *  Maximum amount of dots in slider. Must be `2` or greater.
  *  Note: If `labels` array not empty set `maxCount` to labels count.
